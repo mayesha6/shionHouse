@@ -1,0 +1,351 @@
+/*==============================================================
+                start global css
+==============================================================*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, ul, li, p{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+}
+li{
+    list-style-type: none;
+}
+/* font-family: 'Cinzel', serif; */
+/* font-family: 'Poppins', sans-serif;  */
+/*==============================================================
+                End global css
+==============================================================*/
+/*==============================================================
+                start header css
+==============================================================*/
+.container-fluid {
+    padding: 0;
+}
+#header-section .nav-link{
+    color:#1D2547;
+    font-weight: 500;
+    font-size:15px;
+}
+.social-icon a {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(29,37,71,0.12);
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #1D2547;
+    font-size: 16px;
+}
+.social-icon .search{
+    background-color: #F6F8FE;
+    border: 1px solid #F6F8FE;
+}
+.social-icon .cart {
+    width: 65px;
+    border-radius: 30px;
+    background: #9F78FF;
+    color: #fff;
+    border: 1px solid #9F78FF;
+}
+
+/*==============================================================
+                End header css
+==============================================================*/
+
+/*==============================================================
+                start banner css
+==============================================================*/
+.banner-item{
+    background-image: url('../img/banner2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100%;
+}
+#banner-section h1 {
+    font-size: 120px;
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    line-height: 120px;
+}
+.banner-shadow {
+    background-color: rgba(0,0,0,0.3);
+    height: 100vh;
+}
+.banner-button {
+    background: #9F78FF;
+    padding: 15px 53px;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.banner-button::after {
+    content: '';
+    position: absolute;
+    background-color: #8c6ae4;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 100%;
+    border-radius: 5px;
+    transition:1s;
+    z-index:1;
+}
+.banner-button:hover::after {
+    right: 0%;
+}
+.banner-button a{
+    position: relative;
+    z-index:888;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+
+/*==============================================================
+                End banner css
+==============================================================*/
+/*==============================================================
+                start popular css
+==============================================================*/
+.popular-item{
+    position: relative;
+}
+.popular-product-details {
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.popular-product-details .banner-button {
+    top: -36%;
+    transition: 0.5s all;
+}
+.popular-product-nm {
+    position: absolute;
+    width: 100%;
+    bottom: -40%;
+    padding: 10px 0px;
+    background: rgba(29,37,71,0.5);
+    transition: 0.5s all;
+}
+
+.popular-product-nm h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+.popular-item:hover .banner-button{
+    top:0%;
+} 
+.popular-item:hover .popular-product-nm{
+    bottom:0%;
+}
+/*==============================================================
+                End popular css
+==============================================================*/
+/*==============================================================
+                start arrival css
+==============================================================*/
+.title h2{
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    font-weight: 600;
+    color: #140C40;
+}
+.arrival-item-details {
+    border: 1px solid #F6F8FE;
+}
+.single-arrival-item{
+    transition:0.3s all;
+}
+.single-arrival-item:hover .arrival-item-details {
+    box-shadow: 0 13px 36px rgb(29 37 71 / 5%);
+}
+.arrival-item-details a {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    /* margin-bottom: 8px; */
+    display: block;
+}
+.arrival-item-details a:hover {
+    text-decoration: underline;
+}
+.arrival-item-details .icon i {
+    color: #FBBA42;
+}
+.arrival-item-details p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444444;
+}
+.single-arrival-item{
+    position:relative;
+}
+.single-arrival-item .single-cart{
+    position:absolute;
+}
+.single-arrival-item .single-cart {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+}
+.single-cart i {
+    background: #fff;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    border-radius: 50%;
+    color: #9F78FF;
+}
+
+#arrival-section .banner-button {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #9F78FF;
+    transition: 0.5s all;
+}
+#arrival-section .banner-button::after {
+    background-color: #8c6ae4;
+    top: -100%;
+    right: 0%;
+}
+#arrival-section .banner-button:hover::after {
+    top: 0%;
+}
+#arrival-section .banner-button a {
+    color: #8c6ae4;
+}
+#arrival-section .banner-button:hover a {
+    color: #fff;
+}
+
+/*==============================================================
+                End arrival css
+==============================================================*/
+/*==============================================================
+                start about css
+==============================================================*/
+#about-section{
+    height:650px;
+}
+#about-section .banner-item{
+    height:650px;
+}
+#about-section .banner-shadow {
+    height: 100%;
+}
+#about-section .banner-item h2 {
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+    padding: 0 80px;
+    line-height: 70px;
+    font-weight: 600;
+}
+/*==============================================================
+                End about css
+==============================================================*/
+/*==============================================================
+                start popular product css
+==============================================================*/
+.single-product {
+    position: relative;
+    overflow: hidden;
+}
+.single-product img {
+    transition: 0.3s all;
+}
+.single-product:hover img {
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+.single-product-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.single-product-info h5 {
+    font-size: 34px;
+    font-weight: 400;
+    cursor: pointer;
+}
+/*==============================================================
+                End popular product css
+==============================================================*/
+/*==============================================================
+                start delivery css
+==============================================================*/
+.delivery-wrapper {
+    background: #f5f5f5;
+}
+.single-delivery i {
+    font-size: 40px;
+    color: #2B2B2B;
+}
+.single-delivery p {
+    color: #57667e;
+    font-size: 16px;
+    font-weight: 400;
+}
+.single-delivery h5 {
+    color: #2B2B2B;
+    font-size: 20px;
+}
+/*==============================================================
+                End delivery css
+==============================================================*/
+/*==============================================================
+                start footer css
+==============================================================*/
+.footer-wrapper {
+    background: #1D2547;
+}
+.footer-top p, .footer-top a, .footer-bottom p {
+    color: #C2C5DB;
+    font-size: 14px;
+}
+#footer-section .social-icon a {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.footer-bottom p{
+    text-align: center;
+}
+.footer-bottom i, .footer-bottom p span{
+    color:#9F78FF;
+}
+.goto-top i {
+    background-color: #9F78FF;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    bottom: 5%;
+    right: 2%;
+}
+/*==============================================================
+                End footer css
+==============================================================*/
